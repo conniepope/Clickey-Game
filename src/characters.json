@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Alice",
+        "image": "/images/alice.jpg"
+    },{
+        "id": 2,
+        "name": "Aladdin",
+        "image": "/images/alladin.jpg"
+    }
+]
