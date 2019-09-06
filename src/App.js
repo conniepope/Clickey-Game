@@ -5,23 +5,71 @@ import Header from "./components/Header";
 import characters from "./characters.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting state to initial values
   state = {
-    characters
+    characters: characters,
+    guessedCards: [],
+    score: 0
   };
 
-  // removeFriend = id => {
-  //   // Filter this.state.friends for friends with an id not equal to the id being removed
-  //   const friends = this.state.friends.filter(friend => friend.id !== id);
-  //   // Set this.state.friends equal to the new friends array
-  //   this.setState({ friends });
-  // };
+// function to get name value of card clicked 
+handleClickEvent = event => {
+  const name = event.target.attributes.getNamedItem("name").value;
+  // check to see if card has already been clicked
+  this.checkGuess(name)
+}
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+// function to check if card has already been guessed
+checkGuess = name => {
+
+  // if guessed already, game over
+  if (this.state.guessedCards.includes(name)) {
+    alert (`Oops! You already picked ${name}. GAME OVER! But don't worry, you can try again!`);
+
+    // update topScore if necessary
+    if (this.score > this.topScore) {
+      this.topScore = this.score;
+    } else {
+      this.topScore = this.topScore;
+    }
+
+    // reset
+    this.guessedCards.empty();
+    this.score = 0;
+    this.shuffle()
+
+  } else {
+    // if not guessed yet, push to guessedCards array
+    name.push(this.guessedCards);
+    // add to score
+    this.score++;
+    // continue game
+    this.shuffle()
+  }
+}
+
+// function to set state of cards to the new shuffled state
+shuffle = () => {
+  this.setState(characters = this.shuffleArray(this.state.characters))
+}
+
+// math to shuffle cards
+shuffleArray = (characters) => {
+  var j, x, i;
+  for (i = characters.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = characters[i];
+    characters[i] = characters[j];
+    characters[j] = x;
+  }
+  return characters;
+}
+
+// Map over this.state.character and render a Card component for each character object
   render() {
     return (
       <Wrapper>
-        <Header>Disney Characters</Header>
+        <Header>Disney Characters Clicky Game</Header>
         {this.state.characters.map(character => (
           <Card
             id={character.id}

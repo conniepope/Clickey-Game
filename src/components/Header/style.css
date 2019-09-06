@@ -1,0 +1,26 @@
+body {
+    font-family: "new-waltograph", cursive;
+}
+
+.title {
+    float: left;
+}
+
+.score {
+    float: right;
+}
+
+h3 {
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #20AFE6;
+    padding: 10px 20px;
+    /* border-top: 5px solid black; */
+}
+
+h1, h2 {
+    padding: 0 40px
+};

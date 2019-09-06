@@ -2,10 +2,92 @@
     {
         "id": 1,
         "name": "Alice",
-        "image": "/images/alice.jpg"
+        "image": "/images/alice.jpg",
+        "count": 0
     },{
         "id": 2,
         "name": "Aladdin",
-        "image": "/images/alladin.jpg"
+        "image": "/images/alladin.jpg",
+        "count": 0
+    },{
+        "id": 3,
+        "name": "Aurora",
+        "image": "/images/aurora.jpg",
+        "count": 0
+    },{
+        "id": 4,
+        "name": "BabyJackJack",
+        "image": "/images/babyjackjack.jpg",
+        "count": 0
+    },{
+        "id": 5,
+        "name": "Eeyore",
+        "image": "/images/eyeore.jpg",
+        "count": 0
+    },{
+        "id": 6,
+        "name": "Grumpy",
+        "image": "/images/grumpy.jpg",
+        "count": 0
+    },{
+        "id": 7,
+        "name": "Hei Hei",
+        "image": "/images/hayhay.jpg",
+        "count": 0
+    },{
+        "id": 8,
+        "name": "Iago",
+        "image": "/images/iago.jpg",
+        "count": 0
+    },{
+        "id": 9,
+        "name": "Lady",
+        "image": "/images/lady.jpg",
+        "count": 0
+    },{
+        "id": 10,
+        "name": "Lilo",
+        "image": "/images/lilo.jpg",
+        "count": 0
+    },{
+        "id": 11,
+        "name": "Mickey Mouse",
+        "image": "/images/mickey.jpg",
+        "count": 0
+    },{
+        "id": 12,
+        "name": "Minnie Mouse",
+        "image": "/images/minni.jpg",
+        "count": 0
+    },{
+        "id": 13,
+        "name": "Winnie the Pooh",
+        "image": "/images/pooh.jpg",
+        "count": 0
+    },{
+        "id": 14,
+        "name": "Scrooge McDuck",
+        "image": "/images/scrooge.jpg",
+        "count": 0
+    },{
+        "id": 15,
+        "name": "Simba",
+        "image": "/images/simba.jpg",
+        "count": 0
+    },{
+        "id": 16,
+        "name": "Stitch",
+        "image": "/images/stitch.jpg",
+        "count": 0
+    },{
+        "id": 17,
+        "name": "Thumper",
+        "image": "/images/thumper.jpg",
+        "count": 0
+    },{
+        "id": 18,
+        "name": "Timone",
+        "image": "/images/timone.jpg",
+        "count": 0
     }
 ]
