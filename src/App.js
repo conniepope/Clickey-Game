@@ -3,7 +3,6 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import characters from "./characters.json";
-import Footer from "./components/Footer";
 
 class App extends Component {
   // Setting state to initial values
