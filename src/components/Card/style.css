@@ -1,12 +1,15 @@
 img {
-    border: 2px solid black;
+    border: 3px groove #DF0927;
+    border-radius: 10px;
     float: left;
     margin: 5px;
     height: 200px;
+    box-shadow: 5px 5px rgb(71, 69, 69);
 }
 
 .card {
     margin: 10px 20px;
+
 }
 
 
