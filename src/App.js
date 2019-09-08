@@ -9,7 +9,8 @@ class App extends Component {
   state = {
     characters: characters,
     guessedCards: [],
-    score: 0
+    score: 0,
+    topScore: 0
   };
 
   // function to get name value of card clicked 
@@ -21,44 +22,49 @@ class App extends Component {
       // check to see if card has already been clicked
       // const characters = this.state.characters.getNamedItem("name").value;
       // this.setState({ characters });
-    //   this.checkGuess(name)
-
-    // };
-
-  // function to check if card has already been guessed
-  // checkGuess = name => {
 
     // if guessed already, game over
     if (guessedCards.includes(name)) {
-      this.setState({ guessedCards: [], score: 0 });
+      this.setState({ guessedCards: [] });
       alert (`Oops! You already picked ${name}. GAME OVER! But don't worry, you can try again!`);
-
-      // update topScore if necessary
-      if (this.score > this.topScore) {
-        this.topScore = this.score;
-      } else {
-        this.topScore = this.topScore;
-      }
-
-      // reset
-      // this.guessedCards.empty();
-      // this.score = 0;
-      this.shuffle()
-
+      this.updateTopScore();
+      this.reset();
+      
+      
     } else {
       // if not guessed yet, push to guessedCards array
       guessedCards.push(name);
-
-      if (guessedCards.length === 18) {
-        // this.setState({ score: 18});
-        alert (`YOU WIN!! GREAT JOB!!`);
-      }
+      
       // add to score
       this.setState({ score: guessedCards.length });
-
+      
+      if (guessedCards.length === 18) {
+        this.setState({ score: 18});
+        alert (`YOU WIN!! GREAT JOB!!`);
+        this.updateTopScore();
+        this.reset();
+      }
+      
       // continue game
       this.shuffle()
     }
+  }
+
+  // update topScore if necessary
+  updateTopScore = (score) => {
+
+    if (this.score > this.topScore) {
+      this.setState({ topScore: score })
+    } else {
+      this.topScore = this.topScore;
+    }
+  }
+
+  // reset game - clear array and reset score
+  reset = () => {
+     this.guessedCards = [];
+     this.score = 0;
+     this.shuffle()
   }
 
   // function to set state of cards to the new shuffled state
@@ -82,7 +88,10 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Header>Disney Characters Clicky Game</Header>
+        <Header score={this.state.score}
+          topScore={this.state.topScore}>
+          Disney Characters Clicky Game
+        </Header>
         {this.state.characters.map(character => (
           <Card
           id={character.id}
