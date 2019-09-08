@@ -1,9 +1,12 @@
 body {
-    font-family: "new-waltograph", cursive;
+    /* font-family: 'Walt Disney Script', arial; */
+    font-family: 'Concert One', cursive;
+
 }
 
 .title {
     float: left;
+    font-size: 3em;
 }
 
 .score {
@@ -22,5 +25,9 @@ h3 {
 }
 
 h1, h2 {
-    padding: 0 40px
+    padding: 0 40px;
 };
+
+
+
+
