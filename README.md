@@ -1,4 +1,4 @@
-# Disney Clickey-Game
+# Disney Clicky-Game
 
 https://disney-character-clickey-game.herokuapp.com/
 
