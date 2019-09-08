@@ -15,7 +15,7 @@ class App extends Component {
 
   // function to get name value of card clicked 
   handleClickEvent = name => {
-    console.log("click")
+    console.log(name)
 
     let guessedCards = this.state.guessedCards;
 
@@ -26,10 +26,10 @@ class App extends Component {
     // if guessed already, game over
     if (guessedCards.includes(name)) {
       this.setState({ guessedCards: [] });
-      alert (`Oops! You already picked ${name}. GAME OVER! But don't worry, you can try again!`);
       this.updateTopScore();
+      alert (`Oops! You already picked ${name}. GAME OVER! But don't worry, you can try again!`);
       this.reset();
-      
+      console.log(this.state.topScore)
       
     } else {
       // if not guessed yet, push to guessedCards array
@@ -51,10 +51,10 @@ class App extends Component {
   }
 
   // update topScore if necessary
-  updateTopScore = (score) => {
+  updateTopScore = () => {
 
-    if (this.score > this.topScore) {
-      this.setState({ topScore: score })
+    if (this.state.score > this.state.topScore) {
+      this.setState({ topScore: this.state.score })
     } else {
       this.topScore = this.topScore;
     }

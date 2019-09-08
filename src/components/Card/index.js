@@ -7,7 +7,7 @@ function Card (props) {
         <div className="img-container">
       
              <img alt={props.name} src={props.image}
-             onClick={() => props.handleClickEvent(props.id)} className="click"/>
+             onClick={() => props.handleClickEvent(props.name)} className="click"/>
         
             
         </div>
