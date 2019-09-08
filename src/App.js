@@ -102,7 +102,6 @@ class App extends Component {
           handleClickEvent={this.handleClickEvent}
           />
         ))}
-        <Footer>This is the footer</Footer>
       </Wrapper>
     );
   }
