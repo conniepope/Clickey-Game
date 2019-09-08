@@ -1,7 +1,6 @@
 body {
     /* font-family: 'Walt Disney Script', arial; */
     font-family: 'Concert One', cursive;
-
 }
 
 .title {
@@ -19,13 +18,19 @@ h3 {
 }
 
 .header {
-    background-color: #20AFE6;
+    background-image: url("peeking-mickey.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
     padding: 10px 20px;
     /* border-top: 5px solid black; */
+    color: white;
 }
 
 h1, h2 {
     padding: 0 40px;
+    text-shadow: 1px 1px white;
+    color: #DF0927;
+
 };
 
 
