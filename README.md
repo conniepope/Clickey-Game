@@ -1,6 +1,7 @@
 # Disney Clickey-Game
 
 https://disney-character-clickey-game.herokuapp.com/
+
 Technologies used: React, Javascript, CSS, HTML
 
 Click an image to begin. Click each image only ONCE. You get a point for each character you click on. But DON'T click more than once or GAME OVER!
