@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import characters from "./characters.json";
+import Footer from "./components/Footer";
 
 class App extends Component {
   // Setting state to initial values
@@ -101,6 +102,7 @@ class App extends Component {
           handleClickEvent={this.handleClickEvent}
           />
         ))}
+        <Footer>This is the footer</Footer>
       </Wrapper>
     );
   }
