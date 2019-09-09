@@ -1,6 +1,6 @@
-# Disney Clickey-Game
+# Disney Clicky-Game
 
-https://conniepope.github.io/Clickey-Game/.
+https://disney-character-clickey-game.herokuapp.com/
 
 Technologies used: React, Javascript, CSS, HTML
 
