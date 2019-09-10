@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/conniepope/Clickey-Game/static/css/main.ce867c6d.chunk.css",
-    "main.js": "/conniepope/Clickey-Game/static/js/main.c9eed5c2.chunk.js",
-    "main.js.map": "/conniepope/Clickey-Game/static/js/main.c9eed5c2.chunk.js.map",
-    "runtime~main.js": "/conniepope/Clickey-Game/static/js/runtime~main.d405668d.js",
-    "runtime~main.js.map": "/conniepope/Clickey-Game/static/js/runtime~main.d405668d.js.map",
-    "static/js/2.333e8cac.chunk.js": "/conniepope/Clickey-Game/static/js/2.333e8cac.chunk.js",
-    "static/js/2.333e8cac.chunk.js.map": "/conniepope/Clickey-Game/static/js/2.333e8cac.chunk.js.map",
-    "index.html": "/conniepope/Clickey-Game/index.html",
-    "precache-manifest.61410efc154eabd986187417e4d42431.js": "/conniepope/Clickey-Game/precache-manifest.61410efc154eabd986187417e4d42431.js",
-    "service-worker.js": "/conniepope/Clickey-Game/service-worker.js",
-    "static/css/main.ce867c6d.chunk.css.map": "/conniepope/Clickey-Game/static/css/main.ce867c6d.chunk.css.map",
-    "static/media/style.css": "/conniepope/Clickey-Game/static/media/peeking-mickey.328356c9.jpg"
+    "main.css": "/Clickey-Game/static/css/main.803512ef.chunk.css",
+    "main.js": "/Clickey-Game/static/js/main.266d3c2d.chunk.js",
+    "main.js.map": "/Clickey-Game/static/js/main.266d3c2d.chunk.js.map",
+    "runtime~main.js": "/Clickey-Game/static/js/runtime~main.f8f3d4e6.js",
+    "runtime~main.js.map": "/Clickey-Game/static/js/runtime~main.f8f3d4e6.js.map",
+    "static/js/2.333e8cac.chunk.js": "/Clickey-Game/static/js/2.333e8cac.chunk.js",
+    "static/js/2.333e8cac.chunk.js.map": "/Clickey-Game/static/js/2.333e8cac.chunk.js.map",
+    "index.html": "/Clickey-Game/index.html",
+    "precache-manifest.9cc76b656f8d7ab9f891376c58d5522c.js": "/Clickey-Game/precache-manifest.9cc76b656f8d7ab9f891376c58d5522c.js",
+    "service-worker.js": "/Clickey-Game/service-worker.js",
+    "static/css/main.803512ef.chunk.css.map": "/Clickey-Game/static/css/main.803512ef.chunk.css.map",
+    "static/media/style.css": "/Clickey-Game/static/media/peeking-mickey.328356c9.jpg"
   }
 }
